@@ -1,0 +1,95 @@
+.dashboard-grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu header header header header header"
+    "menu main main main main main"
+    "menu main main main main main";
+  gap: 0px;
+  grid-template-columns: fit-content(2ch) 1fr;
+  grid-template-rows: fit-content(2ch) 1fr;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 7;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.item3 {
+  background-color: rgb(246, 244, 240);
+}
+
+.layout-modal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  color: #3f4346;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 24px;
+  &__logo {
+    content: url(../../public/assets/images/odyssey_logo_large.png);
+    // margin-bottom: 30px;
+    height: 100px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+  }
+}
+.login-image {
+  content: url(../../public/assets/images/banner-image.jpg);
+  height: 400px;
+  width: 400px;
+}
+
+.layout-modal-wrapper {
+  min-width: 800px;
+  min-height: 400px;
+  max-width: 800px;
+  max-height: 400px;
+}
+.mobile__nav-bar{
+  display: none;
+}
+.dashboard__title-bar{
+  display: none;
+}
+.dashboard__title-info{
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .item2 {
+    display: none;
+  }
+  .mobile__nav-bar{
+    display: flex;
+  }
+  .dashboard__title-bar{
+    display: flex;
+  }
+  .dashboard__title-info{
+    display: none;
+  }
+}

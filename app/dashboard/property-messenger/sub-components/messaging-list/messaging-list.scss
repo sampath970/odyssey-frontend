@@ -1,0 +1,19 @@
+.messaging-list{
+    &__list-user-name{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    &__list-count{
+        background-color: red;
+        width: 20px;
+        height: 20px;
+        color: white;
+        font-size: 0.7rem;
+        border-radius: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}

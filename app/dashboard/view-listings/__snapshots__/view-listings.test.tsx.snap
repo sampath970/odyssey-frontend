@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View Listing Component Verify the snapshot of the View Listing Component is matched 1`] = `
+<div
+  className="view-listings"
+>
+  <div
+    className="view-listings__header-wrapper"
+  >
+    <div
+      className="view-listings__header-text"
+    >
+      <label>
+        All Properties
+      </label>
+    </div>
+  </div>
+  <div
+    className="view-listings__section-one"
+  />
+</div>
+`;

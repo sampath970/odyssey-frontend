@@ -1,0 +1,23 @@
+.form-editable {
+  &__input {
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    background-color: lightyellow;
+    position: relative;
+  }
+  &__span-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+.answered {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 3px solid black;
+}
+.highlighted {
+  background-color: yellow;
+  height: 15px;
+}

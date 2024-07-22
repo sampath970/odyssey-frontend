@@ -1,0 +1,40 @@
+.form-mapping {
+  &__pdf-view {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  &__folders {
+    display: flex;
+    background-color: white;
+    margin: 12px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    gap: 24px;
+    text-align: center;
+    flex-wrap: wrap;
+    &-label {
+      font-size: 12px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-wrapper {
+      display: flex;
+      cursor: pointer;
+      min-width: 150px;
+      max-width: 150px;
+      border: 1px solid transparent;
+      padding: 8px 4px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.document-wrapper {
+  display: flex;
+}

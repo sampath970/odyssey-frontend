@@ -1,0 +1,104 @@
+.tenant-info {
+  &__wrapper {
+    margin-top: 12px;
+    border: 1px solid rgb(232, 234, 235);
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__header {
+    background-color: #f1f1f1;
+    color: #000000;
+    padding: 3px 6px;
+    align-self: center;
+  }
+
+  &__add-tenant {
+    display: flex;
+    padding: 12px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed darkgoldenrod;
+    cursor: pointer;
+    transition: all 0.12s ease;
+  }
+
+  &__add-tenant:active {
+    scale: 0.96;
+  }
+
+  &__add-card {
+    padding: 12px;
+    background-color: rgb(246, 244, 240);
+    margin: 10px;
+    width: 325px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid darkgoldenrod;
+  }
+
+  &__card {
+    padding: 12px;
+    background-color: rgb(246, 244, 240);
+    margin: 10px;
+    width: 325px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-image {
+      max-width: 25%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    &-info {
+      // padding: 0px 0px 20px 12px;
+      margin-left: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      text-transform: capitalize;
+    }
+    &-edit{
+      cursor: pointer;
+      margin-right: 12px;
+      transition: all 0.12s ease;
+    }
+    &-edit:active{
+      transform: scale(0.96);
+    }
+
+    &-name {
+      font-weight: bold;
+      color: rgb(83, 83, 83);
+    }
+
+    &-relation {
+      padding-top: 4px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.tenant-info__assign {
+  padding: 12px;
+  background-color: rgb(246, 244, 240);
+  margin: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid darkgoldenrod;
+}
+.select-wrapper{
+  width: 500px;
+}

@@ -1,0 +1,74 @@
+@import "suneditor/dist/css/suneditor.min.css";
+
+.dynamic-input {
+  width: 100%;
+  border: 2px solid rgb(246, 244, 240);
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: text;
+  margin-top: 4px;
+}
+
+.dynamic-input-wrapper {
+  margin: 8px 12px;
+}
+
+.side-bar-header {
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  margin-left: 8px;
+  border: 1px solid #2f549b;
+}
+.side-bar-header-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.side-bar-label-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar-label-one {
+  margin-bottom: 12px;
+}
+.side-bar-label-two {
+  margin: 12px 0;
+}
+.side-bar-label {
+  font-size: 12px;
+}
+.side-bar-select-wrapper {
+  margin: 12px 0;
+  // width: 300px;
+}
+.questions__close-button {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+.error-message {
+  color: tomato;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.flowchart-toolbar{
+  width: 0px !important;
+}
+.create-question__add-field{
+  margin-top: 20px;
+}

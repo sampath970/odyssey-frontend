@@ -1,0 +1,32 @@
+.editable-text {
+  display: flex;
+  align-items: center;
+  &__input {
+    flex: 1;
+    min-width: 200px;
+    max-width: 500px;
+    flex-basis: content ;
+    background:  rgb(255 255 224);
+    border: none;
+    margin: 8px 0;
+    color: rgb(22, 35, 105);
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: text;
+    &:focus {
+      border-color: #eec601;
+      box-shadow: 0 0 3px 0 #eec601;
+    }
+  }
+    &__input:hover {
+      border-color: #eec601;
+      box-shadow: 0 0 3px 0 #eec601;
+    }
+  &__icon {
+  
+    margin-left: 8px;
+    cursor: pointer;
+  }
+}

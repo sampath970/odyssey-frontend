@@ -1,0 +1,125 @@
+.questionnaire-card {
+  box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 0px;
+  min-height: 16rem;
+  width: 12rem;
+  margin-right: 12px;
+  margin-bottom: 8px;
+  max-height: 15rem;
+
+  &__assign-icon {
+    stroke: #b9b9b4;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    &:hover {
+      border-radius: 2rem;
+      border: 1px solid #2f549b;
+      background-color: #cdd7eb;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &__sets {
+    display: flex;
+    height: 70px;
+    flex: 1;
+  }
+
+  &__title {
+    padding: 12px;
+    font-size: 15px;
+    color: #2f549b;
+    overflow: hidden;
+  }
+
+  &__heart-icon {
+    padding: 10px;
+    height: 16px;
+    position: -webkit-sticky;
+    margin-left: auto;
+
+    &-filled {
+      width: 16px;
+      height: 16px;
+      color: #2f549b;
+    }
+
+    &-empty {
+      width: 30px;
+      height: 30px;
+      background: #cdf6cd;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__line {
+      color: lightgrey;
+    }
+  }
+
+  &__name {
+    display: flex;
+    padding-bottom: 40px;
+    margin-top: 27px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__form-name-section {
+    background-color: lightyellow;
+    padding: 10px;
+    max-width: 173px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__form-name {
+    text-transform: capitalize;
+  }
+
+  &__footer-icons {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .questionnaire-card {
+    display: grid;
+    margin-bottom: 12px;
+  }
+}
+
+.floating-menu-assign {
+  display: flex;
+  height: 40px;
+  width: 110px;
+  margin-top: 10px;
+  padding-left: 20px;
+
+  &__questionnaire {
+    font-size: 15px;
+    padding-right: 10px;
+  }
+}

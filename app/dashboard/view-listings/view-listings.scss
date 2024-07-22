@@ -1,0 +1,45 @@
+.view-listings {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__add-properties-section {
+        margin-top: 20px;
+        box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    &__header-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+        flex-wrap: wrap;
+    }
+
+    &__header {
+        font-weight: 500;
+        font-size: 20px;
+
+        &-text {
+            margin-right: 12px;
+        }
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__section {
+        &-one {
+            border-radius: 8px;
+            box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            border-radius: 8px;
+        }
+    }
+}

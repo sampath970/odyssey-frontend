@@ -1,0 +1,38 @@
+.dashboard-grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu header header header header header"
+    "menu main main main main main"
+    "menu main main main main main";
+  gap: 0px;
+  grid-template-columns: fit-content(2ch) 1fr;
+  grid-template-rows: fit-content(2ch) 1fr;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 7
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.item3 {
+  background-color: rgb(246, 244, 240);
+}

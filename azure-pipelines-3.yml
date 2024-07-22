@@ -1,0 +1,51 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.17.0'
+  displayName: 'Install Node.js'
+
+- script: |
+   
+  displayName: 'get latest code from main'
+  
+- script: |
+   echo "----------------------------------------------------------------------"
+   buildNumber=$(Build.BuildNumber)  
+   echo "##vso[task.setvariable variable=build.number]$buildNumber"
+   echo "----------------------------------------------------------------------"
+  displayName: 'Setting build.number [$(build.number)]'
+- script: |
+   echo "----------------------------------------------------------------------"
+   sourceFolder=$(Build.SourcesDirectory)/odyssey-frontend
+   zipFileName=$(Build.ArtifactStagingDirectory)/odyssey-frontend.zip
+   cd $sourceFolder
+   rm -rf node_modules
+   zip -r $zipFileName . x ".git*"
+   cd $(Build.SourcesDirectory)
+   echo "----------------------------------------------------------------------"
+  displayName: 'Creating [$(Build.ArtifactStagingDirectory)/odyssey-frontend.zip]'
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)/odyssey-frontend.zip'
+    artifactName: 'odyssey-frontend'  
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'dev-frontend-4000'
+    sourceFolder: '$(Build.ArtifactStagingDirectory)'
+    contents: '**/odyssey-frontend.zip'
+    targetFolder: '/home/azureuser/Landing-Zone/odyssey-frontend/$(build.number)'
+    cleanTargetFolder: true
+    readyTimeout: '20000'
+    failOnEmptySource: true

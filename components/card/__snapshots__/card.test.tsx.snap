@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component Verify the snapshot of questionnaire card is matched 1`] = `
+<div
+  className="card"
+>
+  <div />
+  <div>
+    <div
+      className="card__title"
+    >
+      <label
+        className="label-l4 label-header"
+        data-testid="card-title"
+        style={{}}
+      />
+    </div>
+    <div
+      className="card__address"
+    >
+      <label
+        className="label-subheader-l3 label-l3 label-subheader"
+        data-testid="card-address"
+        style={{}}
+      />
+    </div>
+    <div
+      className="card__details"
+    >
+      <div
+        className="card__units"
+      >
+        <div>
+          <span>
+            <label
+              className="label-subheader-l3 label-l3 label-subheader"
+              data-testid="card-unit"
+              style={{}}
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

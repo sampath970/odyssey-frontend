@@ -1,0 +1,50 @@
+.notification {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25rem 2.25rem 0 1.25rem;
+    cursor: pointer;
+    &--one {
+      font-weight: bold;
+      letter-spacing: 0.013rem;
+    }
+    &--two {
+      color: rgb(63, 97, 163);
+    }
+  }
+  &__container {
+    margin: 0;
+    width: 20rem;
+    margin: 1.25rem 1.5rem 1.25rem 1.25rem;
+    &__list {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      list-style: none;
+      &-item {
+        list-style: none;
+        cursor: pointer;
+        &-point {
+          margin-right: 0.75rem;
+          color: rgb(63, 97, 163);
+        }
+        &-line {
+          width: 100%;
+          border-bottom: 0.031rem solid rgb(231, 227, 227);
+          margin-bottom: 1.25rem;
+          margin-top: 1.25rem;
+        }
+        &-status {
+          font-size: 0.6rem;
+          margin-top: 0.75rem;
+          color: gray;
+        }
+        &--end {
+          color: rgb(63, 97, 163);
+        }
+      }
+      &-wrapper {
+        display: flex;
+      }
+    }
+  }
+}

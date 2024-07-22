@@ -1,0 +1,199 @@
+.proofs-uploaded {
+  max-width: 775px;
+  &__wrapper {
+    margin-top: 12px;
+    border: 1px solid rgb(232, 234, 235);
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  &__proofs-wrapper {
+    display: flex;
+    padding: 12px 8px;
+    cursor: pointer;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+  }
+  &__icons, &__icons-wrapper{
+    display: none;
+  }
+  &__proofs-wrapper:hover &__icon,&__label:hover{
+    filter: blur(1px);
+  }
+  &__proofs-wrapper:hover &__icons{
+    color: #0c3dff;
+    display: block;
+  }
+  &__proofs-wrapper:hover &__icons-wrapper{
+    position: absolute;
+    top: "50%";
+    right: "50%";
+    display: flex;
+    padding: 20px;
+    gap: 12px;
+  }
+  &__proofs-upload-wrapper {
+    display: flex;
+    margin-top: 8px;
+    padding: 12px 8px;
+    cursor: pointer;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin-right: 10px;
+    border: 1px dashed rgb(184, 182, 182);
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  &__proofs-upload-wrapper:hover {
+    background-color: rgb(227, 227, 227);
+  }
+  &__file-upload {
+    // background-color: aqua;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__overlay{
+    position: absolute;
+    top: 0;
+  }
+  &__label {
+    color: gray;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  &__text {
+    font-style: italic;
+    color: gray;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  &__proofs-wrapper:hover {
+    border: 1px dashed rgb(227, 227, 227);
+  }
+  &__header {
+    background-color: #f1f1f1;
+    color: #000000;
+    padding: 3px 6px;
+    align-self: center;
+  }
+  &__picture-icon {
+    height: 50px;
+    width: 50px;
+  }
+  &__certificate-icon {
+    height: 50px;
+    width: 50px;
+  }
+  &__add-file-icon {
+    height: 50px;
+    width: 50px;
+    opacity: 0.8;
+  }
+  &__checked-icon {
+    position: absolute;
+    top: 1px;
+    right: -2px;
+  }
+  &__closed-icon {
+    stroke: #ffffff;
+    height: 12px;
+    width: 12px;
+    background-color: #2f549b;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__download-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  &__profile-icon {
+    height: 40px;
+    width: 40px;
+    fill: lightgray;
+    cursor: pointer;
+  }
+  &__remove-icon {
+    height: 12px;
+    width: 12px;
+    right: 0px;
+    fill: tomato;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+  }
+  &__tenants-icon-wrapper {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 25px;
+    margin-top: 8px;
+    border: 1px dashed lightgray;
+    justify-content: flex-start;
+    min-width: 20px;
+  }
+  &__tenants-wrapper{
+    position: relative;
+  }
+  &__tenants-close-icon{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+  &__tenant-name {
+    padding: 16px;
+    width: 200px;
+  }
+  &__icons-wrapper {
+    position: relative;
+    padding: 2px;
+  }
+  &__select-tenant{
+    color: #0b1d41
+  }
+  &__select-tenant-wrapper{
+    margin-top: 12px;
+  }
+}
+.delete {
+  &__popup-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    padding-top: 30px;
+    width: 300px;
+}}
+.confirm-button{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+.popup-delete{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

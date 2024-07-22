@@ -1,0 +1,19 @@
+.popup-text {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+.Add-btn {
+  margin:20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.add-unit__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  min-width: 250px;
+}

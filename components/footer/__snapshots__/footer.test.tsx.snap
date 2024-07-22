@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Section Verify the snapshot of Footer section is matched 1`] = `
+<div
+  className="footer__wrapper"
+>
+  <div
+    className="footer-container"
+    data-testid="footer"
+  >
+    <div
+      className="footer-container__item"
+      style={
+        {
+          "gridArea": "item1",
+        }
+      }
+    >
+      <img
+        alt=""
+        className="footer__logo"
+        data-testid="footer-logo"
+        src="../assets/images/odyssey_logo_email.jpg"
+      />
+    </div>
+    <div
+      className="footer-container__item"
+      style={
+        {
+          "gridArea": "item2",
+          "placeItems": "center",
+        }
+      }
+    >
+      <label>
+        ORC Solution
+      </label>
+      <label>
+        PO BOX 391203
+      </label>
+      <label>
+        Anza, California, USA
+      </label>
+      <label>
+        92539
+      </label>
+      <label>
+        650.249.5777
+      </label>
+      <label>
+        info@orcsolution.com
+      </label>
+    </div>
+    <div
+      className="footer-container__item"
+      style={
+        {
+          "gridArea": "item4",
+        }
+      }
+    >
+      <label>
+        <a
+          className="terms three"
+          data-testid="terms-conditions"
+          href="/terms-and-conditions"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          Terms and Conditions
+        </a>
+      </label>
+      <label>
+        <a
+          className="terms three"
+          href="/privacy-policy"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          Privacy policy
+        </a>
+      </label>
+    </div>
+    <div
+      className="footer-container__item"
+      style={
+        {
+          "gridArea": "item5",
+        }
+      }
+    >
+      Copyright © 2024 ORC Solution | Powered by Odyssey
+    </div>
+    <div
+      className="footer-container__item"
+      style={
+        {
+          "gridArea": "item6",
+        }
+      }
+    >
+      <div
+        style={
+          {
+            "display": "flex",
+          }
+        }
+      >
+        <div
+          className="footer__social-icons"
+          data-testid="youtube-link"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            src="../assets/images/youtube.png"
+          />
+        </div>
+        <div
+          className="footer__social-icons"
+          data-testid="instagram-link"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            src="../assets/images/instagram.png"
+          />
+        </div>
+        <div
+          className="footer__social-icons"
+          data-testid="facebook-link"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            src="../assets/images/facebook.png"
+          />
+        </div>
+        <div
+          className="footer__social-icons"
+          data-testid="linkedin-link"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            src="../assets/images/linkedin.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

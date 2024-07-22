@@ -1,0 +1,188 @@
+.add-property {
+  &__name {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__popup {
+    display: flex;
+    justify-content: center;
+  }
+  &__units {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__close {
+    background-color: #2f549b;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__units-input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__header-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__select-wrapper {
+    // border: 1px solid black;
+    margin: 21px 8px 0px 12px;
+  }
+
+  &__select {
+    margin-top: 4px;
+
+    &-label {
+      color: #344054;
+    }
+  }
+  &__multi-select-wrapper {
+    margin: 21px 8px 0px 12px;
+  }
+
+  &__multi-select {
+    margin-top: 4px;
+
+    &-label {
+      color: #344054;
+    }
+  }
+
+  &__legal-name {
+    padding: 0 6px;
+
+    &-checkbox {
+      height: 12px;
+      width: 12px;
+    }
+
+    &-checkbox-label {
+      font-size: 0.75rem;
+      color: gray;
+      font-style: italic;
+    }
+    &__popup {
+      display: flex;
+      justify-content: center;
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        &-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  &__billing-email {
+    padding: 0 6px;
+
+    &-checkbox {
+      height: 12px;
+      width: 12px;
+    }
+
+    &-checkbox-label {
+      font-size: 0.75rem;
+      color: gray;
+      font-style: italic;
+    }
+  }
+
+  &__header-text {
+    font-weight: 400;
+    display: flex;
+    font-size: x-large;
+  }
+
+  &__address {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__modal-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // margin-top: 20px;
+  }
+
+  .error {
+    &-list {
+      column-count: 2;
+      padding: 20px;
+      background-color: gainsboro;
+      list-style: none;
+      margin-bottom: 18px;
+      margin: 10px;
+
+      &__item {
+        color: black;
+        font-style: italic;
+
+        &::before {
+          content: "\2022";
+          color: red;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
+.add-property__popup-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.affordable-multi-select {
+  > .search-wrapper {
+    max-height: 50px;
+    margin-top: 4px;
+    border-radius: 0;
+    width: 13rem;
+    overflow-y: auto;
+    min-height: 40px;
+  }
+  > .chip,
+  .singleChip {
+    white-space: nowrap;
+    font-size: large;
+  }
+  .optionListContainer {
+    width: 17.5rem;
+    background-color: white;
+    padding: 8px;
+    margin-top: 4px;
+  }
+}

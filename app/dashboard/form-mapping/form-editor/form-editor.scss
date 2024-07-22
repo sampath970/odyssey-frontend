@@ -1,0 +1,312 @@
+.form-mapping {
+  &__field-close{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    // top: 15px;
+    // right: -6px;
+    border-radius: 50%;
+    cursor: nwse-resize;
+  }
+  &__review-popup{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__pdf-view {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  &__pdf-wrapper {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__folders {
+    display: flex;
+    background-color: white;
+    margin: 12px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    gap: 24px;
+    text-align: center;
+    flex-wrap: wrap;
+    &-label {
+      font-size: 12px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-wrapper {
+      cursor: pointer;
+      min-width: 150px;
+      max-width: 150px;
+      border: 1px solid transparent;
+      padding: 8px 4px;
+    }
+  }
+  &__reject-modal{
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+  }
+}
+.office-field-error-text{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.office-field-error{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px 0;
+  justify-content: space-between;
+}
+.confirmation-button{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-around;
+}
+
+.form-fields {
+  // min-width: 220px;
+  width: 300px;
+  background-color: white;
+  // padding: 10px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  &__section {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+  }
+  &__input {
+    align-self: flex-start;
+    // border-radius: 10px;
+    border: 0.5px solid #2f549b;
+    // width: 230px;
+    height: 40px;
+    font-size: 20px;
+    width: 100%;
+    padding: 8px 8px 0 8px;
+    margin: 0 12px;
+  }
+
+  &__header {
+    padding: 10px;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 540px;
+    overflow-y: scroll;
+    word-break: break-all;
+    background-color: white;
+    padding: 4px 12px 12px 12px;
+  }
+  &__card {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    &-icon {
+      display: flex;
+      align-items: center;
+    }
+    &-field {
+      display: flex;
+      align-items: center;
+      line-height: 20px;
+    }
+  }
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    margin: auto;
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+    &-buttons {
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+      gap: 8px;
+    }
+    // align-items: center;
+  }
+}
+
+.point {
+  position: absolute;
+  border: 2px solid #2f549b;
+  color: black;
+  font-size: 0.65rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: rgb(223 234 255);
+  z-index: 5;
+}
+.field-close {
+  background: lightcoral;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: -24px;
+  top: -3px;
+  height: 12px;
+  width: 12px;
+  padding: 4px;
+  text-align: center;
+  z-index: 100;
+}
+.field-resize {
+  z-index: 100;
+  background: lightblue;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: -48px;
+  top: -3px;
+  height: 12px;
+  width: 12px;
+  padding: 4px;
+  text-align: center;
+}
+.field-resize-check {
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: -48px;
+  top: -3px;
+  height: 12px;
+  width: 12px;
+  padding: 4px;
+  text-align: center;
+}
+.form-editor__success-popup{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.review-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+  &-footer{
+    text-align: center;
+  }
+}
+
+.form-editor__checked-icon{
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: -2px;
+  left: -2px;
+}
+
+.form-mapping__field-close-icon{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.form-mapping__upload-popup{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reject-success-popup{
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form-mapping__field-error-popup{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  &-header{
+    margin-top: 12px;
+  }
+}
+.form-editor{
+  &__info-icon{
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: rgba(128, 128, 128, 0.305);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &--style{
+        color: rgb(70, 70, 70);
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+      }
+  }
+}
+.form-editor__icon{
+    background: hsl(220deg 42.86% 86.27%);
+    border: 1.2px solid #2f549b;
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: black;
+    position: fixed;
+    top: 6px;
+    left: 260px;
+    z-index: 10;
+    transition: all 0.12s ease;
+    &:active{
+      transform: scale(0.96);
+    }
+}

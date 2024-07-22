@@ -1,0 +1,82 @@
+.add-special-instruction{
+  // max-width: 850px;
+  display: flex;
+  flex-direction: column;
+    &__header-section{
+      line-height: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 12px;
+    }
+    &__first-row{
+        margin:12px;
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+        gap: 20px;
+    }
+    &__second-row{
+      text-align: center;
+    }
+    &__select-label {
+      font-size: 12px;
+    }
+    &__select-menu {
+      margin:4px 0;
+    }
+    &__field{
+      // border: 1px solid black;
+      // border: 1px solid black;
+      width: 30%;
+      margin-bottom: 20px;
+      border: 1px solid #e0e0e0;
+      background-color: #e9e9e980;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    &__multi-select {
+      margin: 4px 0;
+      >.search-wrapper {
+        border-radius: 4px;
+        max-height: 100px;
+        margin-top: 4px;
+        border: 1px solid rgb(201, 201, 201);
+        // border-radius: 0;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 40px;
+        max-height: 40px;
+      }
+    >.chip, .singleChip {
+      white-space: nowrap;
+      font-size: large;
+    }
+    .search-box {
+      font-size: 16px;
+    }
+      .optionListContainer {
+        width: 17.5rem;
+        background-color: white;
+        padding: 8px;
+        margin-top: 4px;
+      }
+    }
+    
+
+}
+
+@media screen and (max-width: 767px) {
+  .add-special-instruction__field {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .add-special-instruction__field {
+    width: 100%;
+  }
+}

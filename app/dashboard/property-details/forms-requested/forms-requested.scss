@@ -1,0 +1,120 @@
+.forms-requested {
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  &__form-name {
+    font-size: 12px;
+    margin-top: 4px;
+    color: rgb(27, 27, 27);
+  }
+  &__popup {
+    width: 500px;
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    flex-direction: column;
+    &-unit {
+      &-number {
+        flex: 1;
+      }
+      &-type {
+        flex: 1;
+      }
+      &-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &-request-status {
+      flex: 1;
+      margin-top: 20px;
+    }
+    &-tenant-name {
+      flex: 1;
+    }
+    &-address-wrapper {
+      flex: 1;
+    }
+    &-tenant-wrapper {
+      display: flex;
+    }
+    &-section {
+      margin: 20px;
+      height: 50px;
+      &_footer {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &-section-three {
+      margin-bottom: 4px;
+      margin-top: 30px;
+    }
+    &-documents {
+      display: flex;
+      border: 1px solid rgb(235, 235, 235);
+      margin-top: 8px;
+      padding: 12px 8px;
+      cursor: pointer;
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 12px;
+      }
+      &-wrapper:hover {
+        border: 1px dashed rgb(227, 227, 227);
+      }
+    }
+    &-section-four {
+      margin-top: 4px;
+    }
+    &-section-five {
+      margin-top: 8px;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem 0;
+    }
+    &-form {
+      display: flex;
+      border: 1px solid rgb(235, 235, 235);
+      margin-top: 8px;
+      padding: 12px 8px;
+      flex-wrap: wrap;
+      cursor: pointer;
+
+      &-checked {
+        position: absolute;
+        top: 3px;
+        left: 5px;
+      }
+      &-wrapper {
+        margin-right: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 12px;
+        position: relative;
+      }
+      &-wrapper-active {
+        margin-right: 20px;
+        background-color: rgb(227, 227, 227);
+        border: 1px dashed rgb(184, 182, 182);
+        padding: 12px;
+        position: relative;
+      }
+      &-wrapper:hover {
+        border: 1px dashed rgb(227, 227, 227);
+      }
+    }
+  }
+}
+.check-mark {
+  height: 15px;
+  width: 20px;
+}

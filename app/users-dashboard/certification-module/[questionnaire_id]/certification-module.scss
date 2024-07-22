@@ -1,0 +1,20 @@
+.certification-module{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+    &__title{
+        background-color: white;
+        padding: 32px;
+        border-radius: 8px;
+        margin: 20px 20px 0 20px;
+    }
+    &__section-wrapper{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        margin: 0 20px;
+        padding-bottom: 12px;
+        flex: 1;
+    }
+}

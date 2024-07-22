@@ -1,0 +1,38 @@
+.tenant-proofs-upload {
+  display: flex;
+  // align-items: center;
+  &__wrapper {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 12px;
+    border: 1px solid rgb(232, 234, 235);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__header {
+    background-color: #f1f1f1;
+    color: #000000;
+    padding: 3px 6px;
+    align-self: center;
+  }
+  &__forms {
+    border: 1px dashed lightgray;
+    padding: 32px 32px;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    &-wrapper {
+      display: flex;
+      // align-items: center;
+      gap: 20px;
+      padding: 12px 0;
+    }
+  }
+}

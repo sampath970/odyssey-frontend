@@ -1,0 +1,57 @@
+.menu {
+  align-self: center;
+}
+.menu__trigger {
+  position: relative;
+}
+.menu__anchor .menu__content {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
+  display: none;
+  border-radius: 0.5rem;
+  z-index: 10;
+  margin-top: 4px;
+}
+
+.menu__trigger .menu__anchor:hover > .menu__content,
+.menu__trigger .menu__anchor .menu__content:hover {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+}
+
+.menu__anchor .menu__content {
+  &--left{
+    left: 0rem;
+  }
+  &--left::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    margin-top: 0.1px;
+    left: 12px;
+    border-width: 8.66px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff;
+  }
+  &--right{
+    right: 0rem;
+  }
+  &--right::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    margin-top: 0.1px;
+    right: 12px;
+    border-width: 8.66px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff;
+  }
+  &-wrapper {
+    > div {
+      border-radius: 0.625rem;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.add-field{
+
+    &__card{
+        display: flex;
+        // background-color: #2f549b;
+        color: white;
+        align-items: center;
+        margin: 0px 0px 12px 0px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.12s ease;
+        min-width: 150px;
+        text-align: center;
+        justify-content: center;
+        &-icon{
+            display: flex;
+            align-items: center;
+        }
+        &-field{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__card:active{
+        transform: scale(0.96);
+    }
+    &__modal{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button{
+        display: flex;
+        margin-top: 16px;
+    }
+    &__error{
+        color: tomato;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.75rem;
+    }
+}

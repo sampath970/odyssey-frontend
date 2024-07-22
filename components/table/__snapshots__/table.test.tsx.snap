@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Component Verify the snapshot of the Table Component with Fake Data is matched 1`] = `
+<div
+  className="table-wrapper"
+>
+  <div
+    className="table-header-wrapper"
+  >
+    <div
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    />
+    <div />
+  </div>
+  <table
+    className="table-view responsiveTable"
+  >
+    <thead
+      data-testid="thead"
+    >
+      <tr
+        className="table-view__row"
+        data-testid="tr"
+      >
+        <th
+          className="table-view__header"
+          data-testid="th"
+        >
+          <label
+            className="label-hero-l2 label-header-l2 label-l2 label-header"
+            style={{}}
+          >
+            No
+          </label>
+        </th>
+        <th
+          className="table-view__header"
+          data-field-type="test"
+          data-sort-key="test"
+          data-testid="th"
+          onClick={[Function]}
+        >
+          <label
+            className="label-hero-l2 label-header-l2 label-l2 label-header"
+            style={{}}
+          >
+            Test
+          </label>
+        </th>
+        <th
+          className="table-view__header"
+          data-field-type="none"
+          data-sort-key="view"
+          data-testid="th"
+          onClick={[Function]}
+        >
+          <label
+            className="label-hero-l2 label-header-l2 label-l2 label-header"
+            style={{}}
+          >
+            View Icon
+          </label>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      data-testid="tbody"
+    >
+      <tr
+        className="table-view__row"
+        data-testid="tr"
+      >
+        <td
+          className="table-data pivoted"
+          data-testid="td"
+        >
+          <div
+            className="tdBefore"
+            data-testid="td-before"
+          >
+            <label
+              className="label-hero-l2 label-header-l2 label-l2 label-header"
+              style={{}}
+            >
+              No
+            </label>
+          </div>
+          1
+        </td>
+        <td
+          className="table-data pivoted"
+          data-testid="td"
+        >
+          <div
+            className="tdBefore"
+            data-testid="td-before"
+          >
+            <label
+              className="label-hero-l2 label-header-l2 label-l2 label-header"
+              style={{}}
+            >
+              Test
+            </label>
+          </div>
+           
+          <label
+            className="label-subheader-l3 label-l3 label-subheader"
+            style={{}}
+          >
+            test
+          </label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

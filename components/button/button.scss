@@ -1,0 +1,214 @@
+.btn {
+  font-family: inherit;
+  display: inline;
+  border-radius: 0;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  line-height: 0.5em;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    text-transform: capitalize;
+    border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    color: white;
+    border-color: #2f549b;
+    background-color: #2f549b;
+  }
+  &-task-table-primary{
+    background-color: #13367a;
+    color: white;
+    padding-top:0.7rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.5rem;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+
+  }
+  &-task-table-success{
+    background: linear-gradient(to bottom right, #3bba77, #1c9350);
+    color: white;
+    padding-top:0.7rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.5rem;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+
+  }
+
+  /* Ripple effect */
+  .buttonEffects {
+    background-position: center;
+    transition: background 0.8s;
+
+    &:hover {
+      color:white;
+      background: #13367a radial-gradient(circle, transparent 1%, #2f549b 1%) center/15000%;
+    }
+
+    &:active {
+      background-color: #13367a;
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+
+  &-secondary {
+    color: #2f549b;
+  }
+
+  &-questionnaire {
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #5de593, #41d67c);
+    transition: all 0.12s ease;
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+
+  &-questionnaire-primary {
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #2f549b, #2f549b);
+    transition: all 0.12s ease;
+   
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+  &-questionnaire-task-table-primary {
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #2f549b, #2f549b);
+    transition: all 0.12s ease;
+    padding-top:0.7rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.5rem;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+  &-users-page-signed {
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #3bba77, #1c9350);
+    transition: all 0.12s ease;
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+
+  &-questionnaire-card {
+    color: #ffffff;
+    background-image: linear-gradient(147deg, #ff1053 74%, #ff1053 74%);
+    transition: all 0.12s ease;
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+
+  &-success {
+    background-color: #2f549b;
+    color: #2f549b;
+  }
+
+  &-upload-page {
+    background-color: #ffffff;
+    color: #2f549b;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+
+  &-upload-page:active {
+    transform: scale(0.96);
+  }
+
+  &-users-page {
+    background-color: #2f549b;
+    color: #ffffff;
+    padding: 16px 24px;
+    width: 200px;
+    transition: all 0.2s ease;
+  }
+
+  &-users-page:active {
+    transform: scale(0.96);
+  }
+
+  &-users-page-secondary {
+    color: #2f549b;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    min-width: 150px;
+    transition: all 0.2s ease;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+  }
+
+  &-users-page-secondary:active {
+    transform: scale(0.96);
+  }
+
+  &-users-page-primary {
+    color: #ffffff;
+    background-color: #2f549b;
+    padding: 12px 8px !important;
+    font-size: 0.75rem;
+    transition: all 0.2s ease;
+  }
+
+  &-users-page-primary:active {
+    transform: scale(0.96);
+  }
+}
+
+.rounded {
+  border: none;
+  border-radius: 3rem;
+}
+
+.outline {
+  outline: 0.063rem solid #2f549b;
+  outline-offset: -1px;
+  border: none;
+  border-radius: 3rem;
+}
+
+.rectangle {
+  outline: 0.063rem solid #2f549b;
+  outline-offset: -1px;
+  border: none;
+}
+
+.success {
+  background-color: #2f549b;
+  border: none;
+  padding: 10px 20px;
+}
+
+.opacity {
+  opacity: .5;
+}

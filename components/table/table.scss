@@ -1,0 +1,102 @@
+@import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+
+// .table-wrapper {
+//   margin: 20px 20px 0 20px;
+//   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+//   border-radius: 12px;
+//   background-color: white;
+//   padding: 0 12px 12px 12px;
+// }
+.table-header-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.table-view {
+  padding: 20px;
+  // border-collapse: unset;
+}
+
+.details {
+  color: gray;
+  justify-content: center;
+  align-items: center;
+  // font-size: 10px;
+}
+tr {
+  padding: 8px;
+}
+table {
+  font-family: inherit;
+  border-collapse: collapse;
+  color: rgb(197, 193, 193);
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.table-data {
+  text-align: center;
+  padding: 12px 0px;
+  font-size: 13px;
+  color: gray;
+  vertical-align: middle;
+
+  border-radius: 12px;
+}
+
+.table-view__header {
+  font-size: 14px;
+  padding: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  color:black;
+  border-bottom: 0.5px solid rgb(230, 224, 224);
+}
+.table-view__all-listing-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table-view-icon:hover {
+  height: 20px;
+  width: 17px;
+  cursor: pointer;
+  border-radius: 80%;
+  background-color: #7997cc;
+}
+.table-view-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.table-view-icon-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.table-back-icon{
+    background: hsl(219, 45%, 64%);
+    height: 0.7rem;
+    width: 0.7rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: white;
+    margin-right: 12px;
+}
+.table-name{
+  color: #2f549b;
+}
+
+@media screen and (max-width: 40em) {
+  .table-data {
+    font-size: 14px;
+  }
+}

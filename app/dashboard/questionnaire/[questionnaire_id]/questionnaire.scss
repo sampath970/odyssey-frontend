@@ -1,0 +1,117 @@
+.questionnaire {
+  padding-left: 20px;
+  padding-right: 20px;
+  &-card {
+    &__footer-icons {
+      background: lightyellow;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border: 1px solid #eec600;
+    }
+  }
+  &__popup-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 140px;
+}
+
+  &__popup-assign-success {
+    margin: 12px 12px 0 12px;
+    margin-bottom: 12px;
+  }
+  &__popup-assign-close {
+    text-align: center;
+  }
+  &__add {
+    margin-top: 20px;
+    box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    margin-bottom: 12px;
+  }
+  &__add_top {
+    margin-top: 20px;
+    box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #32579e, #779ae1);
+  }
+  &-card__wrapper {
+    padding: 12px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 8px;
+  }
+  &__favourites {
+    margin: 24px 10px;
+  }
+}
+.floating-menu {
+  border-radius: 0px;
+  padding: 10px;
+  // background: lightyellow;
+  // border: 1px solid #eec600;
+  &__item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+}
+
+.questionnaire-card__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.popup-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+.questionnaire__popup-delete{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 270px;
+}
+.questionnaire__popup-clone{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+height: 140px;
+&-wrapper{
+  padding: 12px;
+}
+}
+.popup-questionnaire{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

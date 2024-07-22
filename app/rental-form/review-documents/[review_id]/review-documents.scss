@@ -1,0 +1,29 @@
+.review-documents{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    border-radius: 12px;
+    &__folders-wrapper{
+        width: 270px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 20px;
+    }
+    &__wrapper{
+        align-items: center;
+        border: 1px solid rgb(232, 234, 235);
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    &__header{
+        background-color: #f1f1f1;
+    color: #000000;
+    padding: 3px 6px;
+    align-self: center;
+    }
+}

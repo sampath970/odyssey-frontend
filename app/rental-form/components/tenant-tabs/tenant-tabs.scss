@@ -1,0 +1,25 @@
+.tenant-tabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 12px;
+  &__tabs-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    
+  }
+  &__icons-wrapper {
+    height: 32px;
+    width: 32px;
+    // background-color: lightgray;
+    padding: 12px;
+    border-radius: 28px;
+    &--active{
+      background-color: #2f549b;
+      fill: white;
+      stroke-width: 2;
+  }
+  }
+}

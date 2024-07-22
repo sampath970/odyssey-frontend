@@ -1,0 +1,83 @@
+.side-bar{
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.aside-side-bar {
+  width: 260px;
+  float: left;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.side-bar-logo {
+  margin-bottom: 25px;
+  content: url(../../../public/assets/images/odyssey_logo_large.png);
+}
+
+.side-bar-item-container {
+  padding: 0;
+}
+
+.side-bar-item {
+  cursor: pointer;
+  list-style: none;
+  margin: 10px 20px;
+  padding: 10px 0 10px 10px;
+  transition: background-color 0.1s, color 0.1s;
+  border-radius: 20px;
+  color: gray;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  &__text {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-left: 8px;
+  }
+  &__text:hover {
+    color: rgb(22, 35, 105);
+  }
+  &__contents {
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+  }
+  &__logo {
+    display: inline-block;
+    align-items: center;
+  }
+}
+.side-bar-item:hover {
+  background-color: rgba(165, 180, 211, 0.474);
+  border: 1px solid rgb(22, 35, 105);
+  color: rgb(22, 35, 105);
+}
+.side-bar-item__status-icon {
+  height: 16px;
+  width: 16px;
+}
+.side-bar-item__status-icon-to-be-checked {
+  fill: lightcoral;
+}
+.side-bar-item__status-icon-active {
+  fill: greenyellow;
+}
+
+@media (max-height: 800px) {
+  aside {
+    height: 100%;
+  }
+}
+.aside-bar-home{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.side-bar-logo{
+  margin-top: 0.625rem;
+  height: auto;
+  width: 15rem;
+  background: white;
+  cursor: pointer;
+}

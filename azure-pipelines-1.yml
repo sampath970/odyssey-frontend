@@ -1,0 +1,89 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- '*'
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.17.0'
+  displayName: 'Install Node.js'
+  
+- script: |
+    NODE_ENV=development
+    echo NODE_ENV: $NODE_ENV
+    echo $NODE_ENV
+    yarn node-version
+    yarn install --freeze-lockfile
+    yarn test
+  displayName: 'YARN INSTALL and TEST'
+  
+- script: |
+   echo "----------------------------------------------------------------------"
+   buildNumber=$(Build.BuildNumber)  
+   echo "##vso[task.setvariable variable=build.number]$buildNumber"
+   echo "----------------------------------------------------------------------"
+  displayName: 'Setting build.number [$(build.number)]'
+- script: |
+   echo "----------------------------------------------------------------------"
+   sourceFolder=$(Build.SourcesDirectory)/odyssey-frontend
+   zipFileName=$(Build.ArtifactStagingDirectory)/odyssey-frontend.zip
+   cd $sourceFolder
+   rm -rf node_modules
+   zip -r $zipFileName . x ".git*"
+   cd $(Build.SourcesDirectory)
+   echo "----------------------------------------------------------------------"
+  displayName: 'Creating [$(Build.ArtifactStagingDirectory)/odyssey-frontend.zip]'
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)/odyssey-frontend.zip'
+    artifactName: 'odyssey-frontend'  
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'dev-frontend-4000'
+    sourceFolder: '$(Build.ArtifactStagingDirectory)'
+    contents: '**/odyssey-frontend.zip'
+    targetFolder: '/home/azureuser/Landing-Zone/odyssey-frontend/$(build.number)'
+    cleanTargetFolder: true
+    readyTimeout: '20000'
+    failOnEmptySource: true
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'dev-frontend-4000'
+    runOptions: 'inline'
+    inline: |
+      timestamp=$(date +'%Y-%m-%d-%S-%M-%H')
+      echo "----------------------------------------------------------------------"
+      #sudo rm /tmp/odyssey-frontend.zip
+      echo "Stoping [front-end. ervice]"
+      sudo service front-end stop
+      echo "Deleting the content of [/var/www/html/frontend]"
+      sudo rm -rf /var/www/html/frontend/.git*
+      sudo rm -rf /var/www/html/frontend/.next
+      sudo rm -rf /var/www/html/frontend/*
+      sudo cp "/home/azureuser/Landing-Zone/odyssey-frontend/$(build.number)/odyssey-frontend.zip" /tmp
+      sudo chown -R  frontend:frontend /tmp/odyssey-frontend.zip
+      sudo -u frontend unzip "/tmp/odyssey-frontend.zip" -d /var/www/html/frontend
+      cd /var/www/html/frontend
+      NODE_ENV=production
+      echo NODE_ENV: $NODE_ENV
+      echo $NODE_ENV
+      sudo yarn node-version
+      sudo rm -rf node_modules
+      sudo yarn install --freeze-lockfile
+      sudo yarn build
+      sudo chown -R  frontend:frontend /var/www/html/frontend
+      echo "Starting [front-end service]"
+      sudo service front-end start
+      echo "Check status of [frontend service]"
+      sudo service front-end status
+      sudo rm /tmp/odyssey-frontend.zip
+      sudo rm -rf /home/azureuser/Landing-Zone/odyssey-frontend/*
+    readyTimeout: '20000'
+  displayName: 'Deploy Odyssey [Front-End] Service'

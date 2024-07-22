@@ -1,0 +1,59 @@
+.add-shadow-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__content{
+        margin-top: 12px;
+    }
+    &__personal-info-wrapper {
+        border: 1px solid rgb(232, 234, 235);
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 780px;
+        gap: 4px; // Add some space between <div> items
+      }
+      &__personal-info-legend {
+        background-color: #f1f1f1;
+        color: #000000;
+        padding: 3px 6px;
+        align-self: center;
+      }
+      &__success{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-header{
+            margin-top: 12px;
+        }
+      }
+      &__error {
+        &-list {
+          column-count: 2;
+          padding: 20px;
+          background-color: gainsboro;
+          list-style: none;
+          margin: 8px;
+          margin-bottom: 0;
+      
+          &-item {
+            color: black;
+            font-style: italic;
+      
+            &::before {
+              content: "\2022";
+              color: red;
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em;
+            }
+          }
+        }
+      }
+      &__footer{
+        margin-top: 8px;
+      }
+}

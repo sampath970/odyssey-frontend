@@ -1,0 +1,30 @@
+.radio-node {
+    padding: 5px;
+    background: white;
+    min-height: 40px;
+    width: 100px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background: rgba(168, 233, 255, 0.563);
+    border: 1px solid rgba(167,203,227,255);
+    position: relative;
+    color: rgb(1 127 207);
+    &--active{
+      background: rgba(208,251,223,255);
+      border: 1px solid rgba(74,230,162,255);
+      color:rgb(10 170 100);
+    }
+    &__label {
+      display: block;
+      font-size: 12px;
+    }
+    &__button{
+      position: absolute;
+      top: 0;
+      font-size: 0.5rem;
+      right: 0;
+      cursor: pointer;
+    }
+  }

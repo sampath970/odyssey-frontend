@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title bar Verify the snapshot of the Title section is matched 1`] = `
+<div
+  className="title-bar"
+  data-testid="title-bar"
+  id="title-bar"
+>
+  <div
+    className="title-bar__menu-container"
+    data-testid="title-bar-login-menu"
+  >
+    <div
+      className="menu"
+      data-testid="floating-menu"
+    >
+      <div
+        className="menu__trigger"
+        data-testid="floating-menu-trigger"
+      >
+        <div
+          className="menu__anchor"
+          data-testid="floating-menu-anchor"
+        >
+          <div
+            data-testid="avatar"
+          >
+            <button
+              className="avatar"
+              id="avatar-btn"
+            >
+              <div
+                className="avatar__image"
+              />
+              <span
+                className="avatar__name"
+              />
+            </button>
+          </div>
+          <div
+            className="menu__content menu__content--left"
+            data-testid="floating-menu-content"
+            style={
+              {
+                "--tooltip-left": undefined,
+                "display": "",
+              }
+            }
+          >
+            <div
+              className="menu__content-wrapper"
+            >
+              <div
+                className="title-bar__login-menu"
+              >
+                <li
+                  className="title-bar__login-menu__sub-item"
+                >
+                  <span
+                    className="title-bar__login-menu__sub-item__text"
+                  >
+                    My Account
+                  </span>
+                  <div
+                    className="title-bar__login-menu__sub-item__line"
+                  />
+                </li>
+                <li
+                  className="title-bar__login-menu__sub-item"
+                  onClick={[Function]}
+                >
+                  <span
+                    className="title-bar__login-menu__sub-item__text"
+                  >
+                    Log Out
+                  </span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

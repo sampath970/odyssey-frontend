@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Side Bar Verify the snapshot of the SideBar section is matched 1`] = `
+<div
+  className="side-bar"
+  data-testid="side-bar"
+>
+  <aside
+    className="aside-side-bar"
+  >
+    <div
+      className="side-bar-logo-wrapper"
+      onClick={[Function]}
+    >
+      <img
+        alt="loading"
+        className="side-bar-logo"
+        src="./assets/images/odyssey_logo_large.png"
+      />
+    </div>
+    <ul
+      className="side-bar-item-container"
+      data-testid="side-bar-items"
+    >
+      <li
+        className="side-bar-item"
+        data-testid="side-bar-properties"
+        onClick={[Function]}
+      >
+        <div
+          className="side-bar-item__contents"
+        >
+          <test-file-stub />
+          <label
+            className="label-hero-l2 label-header-l2 label-l2 label-header"
+            style={
+              {
+                "marginLeft": "8px",
+              }
+            }
+          >
+            Properties
+          </label>
+        </div>
+      </li>
+       
+      <li
+        className="side-bar-item"
+        onClick={[Function]}
+      >
+        <div
+          className="side-bar-item__contents"
+        >
+          <div
+            className="side-bar-item__notification"
+          >
+            <test-file-stub
+              className="side-bar-item__icon"
+            />
+          </div>
+          <label
+            className="label-hero-l2 label-header-l2 label-l2 label-header"
+            style={
+              {
+                "marginLeft": "8px",
+              }
+            }
+          >
+            Notifications
+          </label>
+        </div>
+      </li>
+      <li
+        className="side-bar-item"
+        onClick={[Function]}
+      >
+        <div
+          className="side-bar-item__contents"
+        >
+          <div
+            className="side-bar-item__notification"
+          >
+            <test-file-stub
+              className="side-bar-item__icon"
+            />
+          </div>
+          <label
+            className="label-hero-l2 label-header-l2 label-l2 label-header"
+            style={
+              {
+                "marginLeft": "8px",
+              }
+            }
+          >
+            Chat
+          </label>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</div>
+`;

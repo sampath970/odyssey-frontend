@@ -1,0 +1,78 @@
+.forms-uploaded{
+    max-height: 400px;
+    min-height: 400px;
+    overflow-y: scroll;
+    overflow-x: unset;
+    max-width: 826px;
+}
+
+.available-form{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    border: 1px solid rgb(234, 234, 234);
+    padding: 12px;
+    justify-content: space-between;
+    min-width: 800px;
+    &__form{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+
+.download-icon{
+    fill: black;
+    background-color: rgb(234,234,234);
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.download-icon:hover{
+    fill: rgb(234,234,234);
+    background-color: gray;
+    cursor: pointer;
+}
+
+.view-icon{
+    height:24px;
+    width:24px;
+    fill:#2f549b;
+    background-color: rgb(234,234,234);
+    padding: 12px;
+    margin-left: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.view-icon:hover{
+    fill:white;
+    background-color: #2f549b;
+    padding: 12px;
+    margin-left: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.form-icon{
+    height:28px;
+    width:28px;
+    margin-right: 12px;
+}
+.upload-profile-icon{
+height: 40px;
+width: 40px;
+fill: lightgray;
+cursor: pointer;
+}
+
+.profile-wrapper{
+    display: flex;
+    gap: 8px;
+}
+
+.tenant-name{
+    margin-bottom: 12px;
+}

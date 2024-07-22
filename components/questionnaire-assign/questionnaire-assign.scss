@@ -1,0 +1,83 @@
+.questionnaire-assign{
+
+    &__wrapper {
+        margin-top: 12px;
+        border: 1px solid rgb(232, 234, 235);
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__header{
+            background-color: #f1f1f1;
+            color: #000000;
+            padding: 3px 6px;
+            align-self: center;
+      }
+      &__form{
+        // border: 1px solid black;
+        min-width: 400px;
+        max-width: 800px;
+        min-height: 400px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        &-icon{
+          width: 32px;
+          height: 32px;
+        }
+        &-name{
+            cursor: pointer;
+        }
+        &-list{
+          display: flex;
+        //   flex-direction: column;
+          margin: 12px 0;
+          gap: 20px;
+          flex-wrap: wrap;
+          // border:1px solid black;
+          width: 100%;
+          row-gap: 12px;
+          &-item{
+              min-width: 200px;
+              max-width: 200px;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            font-size: 12px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            padding: 4px;
+            // margin: 12px 0;
+          }
+          &-item:hover{
+              min-width: 200px;
+              max-width: 200px;
+            display: flex;
+            align-items:center;
+            font-size: 12px;
+            border: 1px dashed lightgray;
+            padding: 4px;
+            // margin: 12px 0;
+          }
+        }
+      }
+}
+.remove-icon {
+    height: 24px;
+    width: 24px;
+    fill: tomato;
+    right: 9px;
+    cursor: pointer;
+    stroke: #2f549b;
+    top: 2px;
+  }
+  .checked-icon {
+    height: 24px;
+    width: 24px;
+    right: 9px;
+    cursor: pointer;
+  
+    top: 2px;
+  }

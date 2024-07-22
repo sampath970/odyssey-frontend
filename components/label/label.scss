@@ -1,0 +1,54 @@
+.label {
+  &-hero-l1 {
+    font-size: 3rem;
+  }
+
+  &-header {
+    font-size: 1rem;
+  }
+
+  &-subheader {
+    font-size: 0.8rem;
+  }
+
+  &-body {
+    font-size: 1.2rem;
+  }
+
+  &-override {
+    color: white;
+    line-height: 5rem;
+    margin: 0;
+    text-shadow: 5px 5px 10px black;
+  }
+
+  &-link{
+    font-size: 1.4rem;
+   
+  }
+  &-sublink {
+    font-size: 1rem;
+    // &:hover {
+    //   text-decoration: underline;
+    // }
+  }
+
+  &-l1 {
+    font-weight: 600;
+    color: white;
+  }
+
+  &-l2 {
+    font-weight: 200;
+  }
+
+  &-l3 {
+    font-weight: 400;
+  }
+  &-l4{
+    font-weight: 300;
+  }
+  &-l5{
+    font-weight: 100;
+  }
+}

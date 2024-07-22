@@ -1,0 +1,177 @@
+.side-bar{
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.aside-side-bar {
+    width: 280px;
+    float: left;
+    background-color: #ffffff;
+    height: 100vh;
+  }
+  
+  .button__badge {
+    background-color: red;
+    font-size: 8px;
+    position: absolute;
+    color: white;
+    border-radius: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    bottom: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    padding: 5px;
+  }
+  
+  .side-bar-logo {
+    margin-bottom: 25px;
+    content: url(../../../public/assets/images/odyssey_logo_large.png);
+  }
+  
+  .side-bar-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .side-bar-item-container {
+    padding: 0;
+  }
+  
+  .side-bar-item {
+    cursor: pointer;
+    list-style: none;
+    margin: 10px 20px;
+    padding: 10px 0 10px 20px;
+    transition: background-color 0.1s, color 0.1s;
+    border-radius: 20px;
+    color: gray;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    &__text {
+      font-size: 1rem;
+      font-weight: 200;
+      margin-left: 8px;
+    }
+    &__text:hover {
+      color: rgb(22, 35, 105);
+    }
+    &__contents {
+      display: flex;
+      align-items: center;
+      padding-left: 4px;
+    }
+    &__icon {
+      height: 16px;
+      width: 16px;
+      fill: gray;
+      vertical-align: top;
+    }
+    &__notification {
+      position: relative;
+    }
+    &__logo {
+      display: inline-block;
+      align-items: center;
+    }
+  }
+  .side-bar-item-active {
+    cursor: pointer;
+    list-style: none;
+    margin: 10px 20px;
+    padding: 10px 0 10px 20px;
+    transition: background-color 0.1s, color 0.1s;
+    border-radius: 20px;
+    background-color: lightyellow;
+    border: 1px solid #eec600;
+    color: rgb(22, 35, 105);
+    &__text {
+      font-size: 1rem;
+      font-weight: 200;
+      margin-left: 8px;
+    }
+    &__text:hover {
+      color: rgb(22, 35, 105);
+    }
+    &__contents {
+      display: flex;
+      align-items: center;
+      padding-left: 4px;
+    }
+    &__icon {
+      height: 16px;
+      width: 16px;
+      fill: gray;
+      vertical-align: top;
+    }
+    &__notification {
+      position: relative;
+    }
+    &__logo {
+      display: inline-block;
+      align-items: center;
+    }
+  }
+  .side-bar-item:hover {
+    background-color: rgba(165, 180, 211, 0.474);
+    border: 1px solid rgb(22, 35, 105);
+    color: rgb(22, 35, 105);
+  }
+  .side-bar-logo {
+    margin-top: 0.625rem;
+    height: auto;
+    width: 15rem;
+    background: white;
+    cursor: pointer;
+  }
+  .mobile__nav-bar{
+    display: none;
+  }
+  @media (max-height: 800px) {
+    aside {
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .mobile__nav-bar{
+      gap: 12px;
+      flex: 1;
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+      background-color: rgba(213, 213, 213, 0.474);
+      &-logo-wrapper{
+        height: 35px;
+        width: 35px;
+        // border: 1px solid gray;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: gray;
+        font-size: 0.7rem;
+        gap: 2px;
+        padding: 8px 0;
+        width: 100px;
+        &--active{
+          border-bottom: 1.5px solid rgb(63 96 227);
+        }
+      }
+    }
+    .item1{
+      height: 100px;
+      background-color: white;
+    }
+    .side-bar{
+      display: none;
+    }
+  }

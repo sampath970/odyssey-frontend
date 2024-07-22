@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Verify the snapshot of Banner section is matched 1`] = `
+[
+  <div
+    className="banner"
+    data-testid="banner"
+  >
+    <div
+      className="banner__section banner__section--one"
+      data-testid="banner-one"
+    >
+      <label
+        className="label-hero-l1 label-l1 label-hero"
+        data-testid="banner-herotext-one"
+        style={
+          {
+            "color": "#224a96",
+            "lineHeight": "5rem",
+            "margin": "0",
+          }
+        }
+      >
+        Welcome to Odyssey
+      </label>
+      <label
+        className="label-body-l2 label-l2 label-body"
+        data-testid="banner-description"
+        style={
+          {
+            "color": "black",
+            "lineHeight": "1.5rem",
+            "paddingLeft": "0",
+          }
+        }
+      >
+        Introducing Odyssey, a revolutionary web app that streamlines the
+            certification process including income, asset, and allowance
+            modules. Get ready to experience a completely automated journey with
+            the Odyssey!
+      </label>
+    </div>
+    <div
+      className="banner__section banner__section--two"
+      data-testid="banner-two"
+    >
+      <div
+        className="header-logo"
+      >
+        <img
+          alt="Logo"
+          src="../assets/images/odyssey_logo_large.png"
+        />
+      </div>
+      <div
+        className="header-menu-login"
+      >
+        <div
+          className="btn"
+          style={{}}
+        >
+          <button
+            className="buttonEffects btn rounded btn-primary"
+            data-testid="login-button"
+            onClick={[Function]}
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    style={
+      {
+        "backgroundImage": "url(/assets/images/home_connected.png)",
+        "backgroundSize": "400px 200px",
+        "height": "200px",
+      }
+    }
+  />,
+]
+`;

@@ -1,0 +1,46 @@
+
+.terms-container{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+.terms-container h1{
+    padding-bottom: 5px;
+}
+.terms-container  p{
+    padding-bottom: 20px;
+}
+.terms-container {
+    .section-title {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 20px; 
+        padding-bottom: 5px; 
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #000; 
+        }
+    }
+}
+.terms-container {
+.main-section-title{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px; 
+    padding-bottom: 5px; 
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000; 
+    }
+}}

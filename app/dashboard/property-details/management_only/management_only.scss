@@ -1,0 +1,27 @@
+.management-only {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 20px;
+  &__card {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid lightgray;
+    }
+  }
+  &__site-map {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: #2f549b;
+    text-decoration: underline;
+    font-style: italic;
+  }
+}

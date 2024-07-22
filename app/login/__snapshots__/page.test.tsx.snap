@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Page Verify the snapshot of the Login Component is matched 1`] = `
+<div>
+  <h1>
+    Hello, Login Page!
+  </h1>
+</div>
+`;

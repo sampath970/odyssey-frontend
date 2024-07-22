@@ -1,0 +1,38 @@
+
+  .signature-input{
+    background-color: white;
+    margin: 0 24px;
+    padding: 24px;
+    &__button-content{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    &__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  .signature-canvas,
+  .signature-image {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #dee2e6;
+  }
+  #signature-pad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .saved-signature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header{
+      align-self: flex-start;
+      margin-left: 4rem;
+      margin-top: 1rem;
+    }
+  }

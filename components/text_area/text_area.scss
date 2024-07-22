@@ -1,0 +1,37 @@
+.textarea {
+    width: 100%;
+    color: #4b5563;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 0.875rem;
+    outline: none;
+    max-height: 50px;
+    margin-right: 12px;
+    line-height: 20px;
+    resize: none;
+    font-family: inherit;
+    &:focus {
+        border-color: #4f46e5;
+  }
+  &::placeholder {
+    color: rgb(191 195 203);
+    font-size: 14px; 
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  &__label{
+    font-weight: 400;
+    display: block;
+    color: #344054;
+  }
+  &__error {
+    color: #db4437;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 12px;
+    margin-top: 4px;
+  }
+}

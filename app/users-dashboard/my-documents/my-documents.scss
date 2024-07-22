@@ -1,0 +1,26 @@
+.my-documents{
+    display: flex;
+    flex-direction: column;
+    &__proofs-upload{
+        background: white;
+        flex: 1;
+        margin: 20px;
+        padding: 10px 20px 20px 20px;
+        border-radius: 12px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .my-documents{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        &__proofs-upload{
+            background: white;
+            flex: 1;
+            margin: 20px;
+            padding: 10px 20px 20px 20px;
+            border-radius: 12px;
+        }
+    }
+}

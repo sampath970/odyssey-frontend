@@ -1,0 +1,72 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2);
+  max-width: 1200px;
+  grid-template-areas:
+    "item1 item2 item2 item4"
+    "item5 item5 item5 item6";
+
+  &__item {
+    background-color: rgb(1, 32, 86);
+    color: white;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6";
+    grid-template-rows: repeat(6);
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  &__logo {
+    height: auto;
+    width: 12.5rem;
+    background: white;
+  }
+  &__social {
+    &-icons {
+      > img {
+        height: 2.5rem;
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+  &__wrapper {
+    background-color: rgb(1, 32, 86);
+  }
+}
+
+.social {
+  &__icons {
+    > img {
+      height: 2.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.terms {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    display: grid;
+    margin-left: auto; /*this allows the grid to be in center after the 1200px */
+    margin-right: auto; /*this allows the grid to be in center after the 1200px */
+  }
+}

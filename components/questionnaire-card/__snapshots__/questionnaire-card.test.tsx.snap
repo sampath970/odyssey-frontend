@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionnaireCard component Verify the snapshot of questionnaire card is matched 1`] = `
+<div>
+  <div
+    className="questionnaire-card"
+    data-testid="card"
+  >
+    <div
+      className="questionnaire-card__sets"
+    >
+      <div
+        className="questionnaire-card__title"
+        data-testid="questionnaire_title"
+      >
+        <label
+          className="label-l4 label-header"
+          data-testid="title"
+          style={{}}
+        />
+      </div>
+      <div
+        className="questionnaire-card__heart-icon"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="questionnaire-card__name"
+      data-testid="questionnaire_name"
+    >
+      <label
+        className="label-hero-l2 label-header-l2 label-l2 label-header"
+        data-testid="name"
+        style={{}}
+      />
+    </div>
+    <div
+      className="questionnaire-card__footer-icons"
+      onClick={[Function]}
+    >
+      <div
+        className="floating-menu-assign__questionnaire"
+      >
+        <div
+          className="menu"
+          data-testid="floating-menu"
+        >
+          <div
+            className="menu__trigger"
+            data-testid="floating-menu-trigger"
+          >
+            <div
+              className="menu__anchor"
+              data-testid="floating-menu-anchor"
+            >
+              <div
+                className="questionnaire-card__icon questionnaire-card__footer-icons-email"
+              >
+                <test-file-stub
+                  className="questionnaire-card__assign-icon"
+                  height="20px"
+                  width="20px"
+                />
+              </div>
+              <div
+                className="menu__content menu__content--left"
+                data-testid="floating-menu-content"
+                style={
+                  {
+                    "--tooltip-left": undefined,
+                    "display": "",
+                  }
+                }
+              >
+                <div
+                  className="menu__content-wrapper"
+                >
+                  <div
+                    className="floating-menu-assign"
+                  >
+                    <label
+                      className="label-hero-l2 label-header-l2 label-l2 label-header"
+                      style={
+                        {
+                          "textTransform": "capitalize",
+                        }
+                      }
+                    >
+                      Assign Questionnaire
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="floating-menu-assign__questionnaire"
+      >
+        <div
+          className="menu"
+          data-testid="floating-menu"
+        >
+          <div
+            className="menu__trigger"
+            data-testid="floating-menu-trigger"
+          >
+            <div
+              className="menu__anchor"
+              data-testid="floating-menu-anchor"
+            >
+              <div
+                className="questionnaire-card__icon questionnaire-card__footer-icons-send"
+                data-testid="onEdit"
+                onClick={[Function]}
+              >
+                <test-file-stub
+                  height="20px"
+                  width="20px"
+                />
+              </div>
+              <div
+                className="menu__content menu__content--left"
+                data-testid="floating-menu-content"
+                style={
+                  {
+                    "--tooltip-left": undefined,
+                    "display": "",
+                  }
+                }
+              >
+                <div
+                  className="menu__content-wrapper"
+                >
+                  <div
+                    className="floating-menu-assign"
+                  >
+                    <label
+                      className="label-hero-l2 label-header-l2 label-l2 label-header"
+                      style={
+                        {
+                          "textTransform": "capitalize",
+                        }
+                      }
+                    >
+                      Edit Questionnaire
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="floating-menu-assign__questionnaire"
+      >
+        <div
+          className="menu"
+          data-testid="floating-menu"
+        >
+          <div
+            className="menu__trigger"
+            data-testid="floating-menu-trigger"
+          >
+            <div
+              className="menu__anchor"
+              data-testid="floating-menu-anchor"
+            >
+              <div
+                className="questionnaire-card__icon questionnaire-card__footer-icons-delete"
+              >
+                <test-file-stub
+                  data-testid="onDelete"
+                  height="20px"
+                  width="20px"
+                />
+              </div>
+              <div
+                className="menu__content menu__content--left"
+                data-testid="floating-menu-content"
+                style={
+                  {
+                    "--tooltip-left": undefined,
+                    "display": "",
+                  }
+                }
+              >
+                <div
+                  className="menu__content-wrapper"
+                >
+                  <div
+                    className="floating-menu-assign"
+                  >
+                    <label
+                      className="label-hero-l2 label-header-l2 label-l2 label-header"
+                      style={
+                        {
+                          "textTransform": "capitalize",
+                        }
+                      }
+                    >
+                      Delete Questionnaire
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="floating-menu-assign__questionnaire"
+      >
+        <div
+          className="menu"
+          data-testid="floating-menu"
+        >
+          <div
+            className="menu__trigger"
+            data-testid="floating-menu-trigger"
+          >
+            <div
+              className="menu__anchor"
+              data-testid="floating-menu-anchor"
+            >
+              <div
+                className="questionnaire-card__icon questionnaire-card__footer-icons-clone"
+                data-testid="onClone"
+              >
+                <test-file-stub
+                  height="20px"
+                  width="20px"
+                />
+              </div>
+              <div
+                className="menu__content menu__content--left"
+                data-testid="floating-menu-content"
+                style={
+                  {
+                    "--tooltip-left": undefined,
+                    "display": "",
+                  }
+                }
+              >
+                <div
+                  className="menu__content-wrapper"
+                >
+                  <div
+                    className="floating-menu-assign"
+                  >
+                    <label
+                      className="label-hero-l2 label-header-l2 label-l2 label-header"
+                      style={
+                        {
+                          "textTransform": "capitalize",
+                        }
+                      }
+                    >
+                      Clone Questionnaire
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

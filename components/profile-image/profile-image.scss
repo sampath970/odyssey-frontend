@@ -1,0 +1,136 @@
+.box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: rgb(167, 167, 167);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: -24px 0px;
+  background: linear-gradient(315deg, #daffe9, #2ecc71);
+  cursor: pointer;
+  transition: inset 0.15s;
+  animation: animate 4s linear infinite;
+}
+.box:hover::before {
+  inset: -20px 0;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  content: attr(data-name);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-default {
+  position: relative;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  background: rgb(167, 167, 167);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+}
+.box-default::before {
+  content: "";
+  position: absolute;
+  inset: -24px 0px;
+  background: linear-gradient(315deg, #ffadb5, #9b111e);
+  cursor: pointer;
+  transition: inset 0.15s;
+  animation: animate 4s linear infinite;
+  pointer-events: none;
+}
+.box-default:hover::before {
+  inset: -20px 0;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.box-default::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  content: attr(data-name);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.box-review {
+  position: relative;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  background: rgb(167, 167, 167);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+}
+.box-review::before {
+  content: "";
+  position: absolute;
+  inset: -24px 0px;
+  background: linear-gradient(315deg, #3d5bd3, #263a88);
+  cursor: pointer;
+  transition: inset 0.15s;
+  animation: animate 4s linear infinite;
+  pointer-events: none;
+}
+.box-review:hover::before {
+  inset: -20px 0;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.box-review::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  content: attr(data-name);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
