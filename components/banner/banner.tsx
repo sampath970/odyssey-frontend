@@ -30,17 +30,14 @@ const Banner: React.FC = () => {
         >
           <Label
             type={LabelType.Hero}
-            text={"Welcome to Echo"}
+            text={"Welcome to ECHO, the pioneering solution in housing eligibility."}
             variant={LabelVariant.L1}
             overrideTextStyles={bannerStyle}
             dataTestId="banner-herotext-one"
           />
 
           <Label
-            text={`Introducing Echo, a revolutionary web app that streamlines the
-            certification process including income, asset, and allowance
-            modules. Get ready to experience a completely automated journey with
-            the Echo!`}
+            text={`As the first company to exclusively utilize patented technology for full automation, we offer a revolutionary service for vested housing owners, property management companies, and government agencies.\nEcho streamlines and simplifies the eligibility determination process, setting a new standard in efficiency and accuracy.`}
             type={LabelType.Body}
             variant={LabelVariant.L2}
             overrideTextStyles={descriptionStyle}

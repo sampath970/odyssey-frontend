@@ -47,18 +47,17 @@ function Footer(props) {
             <img
               data-testid="footer-logo"
               className="footer__logo"
-              src="../assets/images/odyssey_logo_email.jpg"
+              src="../assets/images/odyssey_logo_large.png"
               alt=""
             />
 
           </div>
           <div className="footer-container__item" style={{ gridArea: "item2", placeItems: "center" }}>
-            <label>ORC Solution</label>
-            <label>PO BOX 391203</label>
-            <label>Anza, California, USA</label>
-            <label>92539</label>
-            <label>650.249.5777</label>
-            <label>info@orcsolution.com</label>
+            <label>ECHO</label>
+            <label>312 W. 2ND Street #3342</label>
+            <label>Casper, WY 82601</label>
+            <label></label>
+            <label>info@echo-certs.com</label>
           </div>
           <div className="footer-container__item" style={{ gridArea: "item4" }}>
             <label>
@@ -69,7 +68,7 @@ function Footer(props) {
             </label>
           </div>
           <div className="footer-container__item" style={{ gridArea: "item5" }}>
-            Copyright &#169; 2024 ORC Solution | Powered by Echo
+            Copyright &#169; 2024 E.C.H.O Solutions Inc | Powered by ECHO
           </div>
           <div className="footer-container__item" style={{ gridArea: "item6" }}>
             <div style={{ display: "flex" }}>
