@@ -23,6 +23,12 @@ describe('Banner', () => {
     const banner_section_herotext = screen.getByTestId('banner-herotext-one');
     expect(banner_section_herotext).toBeInTheDocument()
   })
+  it('check if the Banner Section SubHerotext is rendered', () => {
+    render(<Banner />)
+
+    const banner_section_subherotext = screen.getByTestId('banner-subherotext-one');
+    expect(banner_section_subherotext).toBeInTheDocument()
+  })
   it('check if the Banner Section Description is rendered', () => {
     render(<Banner />)
 

@@ -9,6 +9,15 @@ const bannerStyle = {
   margin: "0",
   //  textShadow: "5px 5px 10px black",
 }
+
+const bannerSubStyle = {
+  color: "#224a96",
+  fontSize: "2.3rem",
+  lineHeight: "4rem",
+  margin: "0",
+  //  textShadow: "5px 5px 10px black",
+}
+
 const descriptionStyle = {
   paddingLeft: "0",
   lineHeight: "1.5rem",
@@ -30,10 +39,18 @@ const Banner: React.FC = () => {
         >
           <Label
             type={LabelType.Hero}
-            text={"Welcome to ECHO, the pioneering solution in housing eligibility."}
+            text={"Welcome to ECHO,"}
             variant={LabelVariant.L1}
             overrideTextStyles={bannerStyle}
             dataTestId="banner-herotext-one"
+          />
+
+          <Label
+            type={LabelType.Header}
+            text={"the pioneering solution in housing eligibility."}
+            variant={LabelVariant.L1}
+            overrideTextStyles={bannerSubStyle}
+            dataTestId="banner-subherotext-one"
           />
 
           <Label

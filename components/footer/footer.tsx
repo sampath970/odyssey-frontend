@@ -44,13 +44,7 @@ function Footer(props) {
       <div className="footer__wrapper">
         <div className="footer-container" data-testid="footer">
           <div className="footer-container__item" style={{ gridArea: "item1" }}>
-            <img
-              data-testid="footer-logo"
-              className="footer__logo"
-              src="../assets/images/odyssey_logo_large.png"
-              alt=""
-            />
-
+            
           </div>
           <div className="footer-container__item" style={{ gridArea: "item2", placeItems: "center" }}>
             <label>ECHO</label>
